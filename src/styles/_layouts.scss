@@ -1,0 +1,345 @@
+// Generic layouts
+// Please use the http://careerprep.devint.aptimus.net:9000/#/layouts to check the sizing before changing these
+//--------------------------------------
+.one-col > .row > .col {
+  @extend .col-xs-12;
+  @extend .col-sm-12;
+  @extend .col-md-12;
+}
+
+.two-col > .row > .col {
+  @extend .col-xs-12;
+  @extend .col-sm-6;
+  @extend .col-md-6;
+}
+
+.three-col > .row > .col {
+  @extend .col-xs-12;
+  @extend .col-sm-;
+  @extend .col-md-4;
+}
+
+.four-col > .row > .col {
+  @extend .col-xs-12;
+  // 4 has to be divisible by 2 or 1 for this layout to work;
+  // 12 columns / col-sm-4 = 3, leaving one odd column orphaned in sm screen size
+  @extend .col-sm-3;
+  @extend .col-md-3;
+}
+.five-col > .row > .col{
+  @extend .col-xs-6;
+  @extend .col-md-5th;
+}
+
+.six-col > .row > .col {
+  @extend .col-xs-12;
+  @extend .col-sm-4;
+  // same here if col-md-3 is used here the will be 2 orphans
+  // 12/3 = 4 ... 6-4 = 2 orphans
+  @extend .col-md-2;
+  @extend .col-lg-2;
+}
+
+// Named layouts
+//--------------------------------------
+.two-five > .row > .primary {
+  @extend .col-xs-5;
+  @extend .col-md-5;
+}
+
+.two-five > .row > .secondary {
+  @extend .col-xs-2;
+  @extend .col-md-2;
+}
+
+.three-four-five > .row > .tertiary {
+  @extend .col-xs-3;
+  @extend .col-md-3;
+}
+
+.three-four-five > .row > .secondary {
+  @extend .col-xs-4;
+  @extend .col-md-4;
+}
+
+.three-four-five > .row > .primary {
+  @extend .col-xs-5;
+  @extend .col-md-5;
+}
+
+.two-three-seven > .row > .primary {
+  @extend .col-xs-7;
+  @extend .col-md-7;
+}
+
+.two-three-seven > .row > .secondary {
+  @extend .col-xs-3;
+  @extend .col-md-3;
+}
+
+.two-three-seven > .row > .tertiary {
+  @extend .col-xs-2;
+  @extend .col-md-2;
+}
+
+.one-five-six > .row > .primary {
+  @extend .col-xs-6;
+  @extend .col-md-6;
+}
+
+.one-five-six > .row > .secondary {
+  @extend .col-xs-5;
+  @extend .col-md-5;
+}
+
+.one-five-six > .row > .tertiary {
+  @extend .col-xs-1;
+  @extend .col-md-1;
+}
+
+.one-four-seven > .row > .primary {
+  @extend .col-xs-7;
+  @extend .col-md-7;
+}
+
+.one-four-seven > .row > .secondary {
+  @extend .col-xs-4;
+  @extend .col-md-4;
+}
+
+.one-four-seven > .row > .tertiary {
+  @extend .col-xs-1;
+  @extend .col-md-1;
+}
+
+.five-seven > .row > .primary {
+  @extend .col-xs-7;
+  @extend .col-md-7;
+}
+
+.five-seven > .row > .secondary {
+  @extend .col-xs-5;
+  @extend .col-md-5;
+}
+
+.three-six > .row > .primary {
+  @extend .col-xs-6;
+  @extend .col-md-6;
+}
+
+.three-six > .row > .secondary {
+  @extend .col-xs-3;
+  @extend .col-md-3;
+}
+
+.one-ten > .row > .primary {
+  @extend .col-xs-10;
+  @extend .col-md-10;
+}
+
+.one-ten > .row > .secondary {
+  @extend .col-xs-1;
+  @extend .col-md-1;
+}
+
+.one-eleven > .row > .primary {
+  @extend .col-xs-11;
+  @extend .col-md-11;
+}
+
+.one-eleven > .row > .secondary {
+  @extend .col-xs-1;
+  @extend .col-md-1;
+}
+
+.two-eight > .row > .primary {
+  @extend .col-xs-8;
+  @extend .col-md-8;
+}
+
+.two-eight > .row > .secondary {
+  @extend .col-xs-2;
+  @extend .col-md-2;
+}
+
+.four-eight > .row > .primary {
+  @extend .col-xs-8;
+  @extend .col-md-8;
+}
+
+.four-eight > .row > .secondary {
+  @extend .col-xs-4;
+  @extend .col-md-4;
+}
+
+.three-nine > .row > .primary {
+  @extend .col-xs-9;
+  @extend .col-md-9;
+}
+
+.three-nine > .row > .secondary {
+  @extend .col-xs-3;
+  @extend .col-md-3;
+}
+
+.two-eight > .row > .primary {
+  @extend .col-xs-8;
+  @extend .col-md-8;
+}
+
+.two-eight > .row > .secondary {
+  @extend .col-xs-2;
+  @extend .col-md-2;
+}
+
+.six-three > .row > .primary {
+  @extend .col-xs-6;
+  @extend .col-md-6;
+}
+
+.six-three > .row > .secondary {
+  @extend .col-xs-3;
+  @extend .col-md-3;
+}
+
+.ten-two > .row > .primary {
+  @extend .col-md-10;
+  @extend .col-xs-12;
+}
+
+.ten-two > .row > .secondary {
+  @extend .col-md-2;
+  @extend .col-xs-12;
+}
+
+.eleven-one > .row > .primary {
+  @extend .col-md-11;
+  @extend .col-xs-12;
+}
+
+.eleven-one > .row > .secondary {
+  @extend .col-md-1;
+  @extend .col-xs-12;
+}
+
+.six-off-three > .row > .col {
+  @extend .col-xs-6;
+  @extend .col-md-6;
+  @extend .col-xs-offset-3;
+}
+
+.eight-off-two > .row > .col {
+  @extend .col-xs-8;
+  @extend .col-md-8;
+  @extend .col-xs-offset-2;
+}
+
+.ten-off-one > .row > .col {
+  @extend .col-xs-12;
+  @extend .col-md-10;
+  @extend .col-md-offset-1;
+}
+.container {
+  padding-left: 65px;
+}
+.container-fluid, .eight-off-two, .eleven-one, .four-col, .four-eight, .one-col, .one-ten, .one-eleven, .one-two-col, .six-col, .six-off-three, .ten-off-one, .ten-two, .three-col, .three-six, .two-col, .two-eight, .six-three, .two-five, .two-ten,
+.three-four-five, .two-three-seven, .one-four-seven, .one-five-six, .five-seven, .three-nine, .five-col {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-full , .row > .col.container-full.container-full, .row > .primary.container-full, .row > .secondary.container-full, .row > .tertiary.container-full {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row > .col.container-left.container-left, .container-left {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.row > .col.container-right.container-right, .container-right {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 15px;
+}
+
+// Flatten the top-margin on the first element inside a layout
+.one-col.flatten, .two-col.flatten, .three-col.flatten, .four-col.flatten, .five-col.flatten, .six-col.flatten, .two-five.flatten, .three-four-five.flatten, .two-three-seven.flatten, .one-five-six.flatten, .one-four-seven.flatten, .five-seven.flatten, .three-six.flatten, .one-ten.flatten, .one-eleven.flatten, .two-ten.flatten, .four-eight.flatten, .two-eight.flatten, .six-three.flatten, .six-off-three.flatten, .eight-off-two.flatten, .ten-off-one, .five-col.flatten {
+  & > .row:first-of-type > .col:first-of-type, & > .row:first-of-type > .primary:first-of-type, & > .row:first-of-type > .secondary:first-of-type, & > .row:first-of-type > .tertiary:first-of-type, {
+    & > *:first-child {
+      margin-top: 0px;
+    }
+  }
+}
+
+*.flatten > .row:first-of-type > *:first-of-type > div[ng-include] > *:first-child {
+  margin-top: 0px;
+}
+
+.row {
+  margin-bottom: $padding-large-vertical;
+  &.flatten {
+    margin-bottom: 0px;
+  }
+}
+
+.col img {
+  max-width: 100%;
+}
+
+.container {
+    &.nav-expand {
+    position:relative;
+    left:150px;
+  }
+  &.nav-collapse {
+    position:relative;
+    left:0;
+  }
+}
+
+/* Extra xsall devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Large devices (large desktops, 995px and up) */
+@media (min-width: $screen-lg-min) {
+  .container {
+    padding-left: 0;
+    &.container-full{
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min + 160px) {
+  .container {
+    &.nav-expand {
+      position:relative;
+      left:0px;
+    }
+    &.nav-collapse {
+      position:relative;
+      left:0;
+    }
+  }
+ }
+
+/* Custom full width 5 columns layout */
+.col-lg-5th{
+  @include make-lg-column(2.4);
+}
+.col-md-5th{
+  @include make-md-column(2.4);
+}
+.col-sm-5th{
+  @include make-sm-column(2.4);
+}
+

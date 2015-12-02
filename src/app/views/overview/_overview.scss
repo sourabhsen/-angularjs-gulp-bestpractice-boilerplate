@@ -1,0 +1,48 @@
+.site-header {
+    box-shadow: 0 2px 1px #777;
+    -webkit-box-shadow : 0 2px 1px #777;
+    background-color: #1e2939 ;
+    padding:5px 20px;
+   .site-tag{
+    color: #FFF;
+  }
+}
+
+.file-grid{
+   .file-box{
+      max-width:300px;
+      max-height:340px;
+
+      &:hover{
+        background-color:#f8fcff;
+        box-shadow:2px 2px 5px -5px #000;
+      
+      .action-control{
+        opacity:1;
+      }
+   }
+    canvas{
+      display:block;
+      vertical-align:middle;
+      margin:0 auto;
+      text-align: center;
+    }
+  }
+  .action-control{
+        vertical-align:top;
+        opacity: 0;
+        transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
+    
+        span:hover{
+            color:#111cae;
+        }
+  }
+
+  .meta{
+    padding:5px;
+  }
+}
+
+
