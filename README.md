@@ -8,23 +8,70 @@ A boilerplate using AngularJS, SASS, Gulp, and Browserify that also utilizes [th
 
 
 ---
+## Getting Started
 
-### Getting up and running
+First Install development dependencies, ensure you have nodejs installed and install the following tools:
 
-1. Clone this repo from `https://github.com/sourabhsen/-angularjs-gulp-bestpractice-boilerplate.git`
-2. Run `npm install` from the root directory
-3. Run `gulp dev` (may require installing Gulp globally `npm install gulp -g`)
-4. Your browser will automatically be opened and directed to the browser-sync proxy address
-5. To prepare assets for production, run the `gulp prod` task (Note: the production task does not fire up the express server, and won't provide you with browser-sync's live reloading. Simply use `gulp dev` during development. More information below)
+[Gulp](http://gulpjs.com/) command line utility:
 
-Now that `gulp dev` is running, the server is up as well and serving files from the `/build` directory. Any changes in the `/app` directory will be automatically processed by Gulp and the changes will be injected to any open browsers pointed at the proxy address.
+  `npm install -g gulp`
 
-#### Other resources
+[Bower](http://bower.io/) command line utility:
+  
+  `npm install -g bower`
 
-- [Yeoman generator](https://github.com/alferov/generator-angular-gulp-browserify)
-- [Cordova-friendly fork](https://github.com/StrikeForceZero/angularjs-cordova-gulp-browserify-boilerplate)
+###Ensure node tools and gulp plugins are up to date:
 
----
+  `npm install`
+
+will install dependencies defined in **package.json** file
+
+  `bower install`
+
+will install front end dependencies defined in **bower.json** file.
+
+## Tasks
+
+- To see a list of options tasks and sub tasks
+
+  `gulp`
+
+- To build project files for development, serve browser and watch all project files:
+
+  `gulp serve`
+
+
+## Usage
+
+### Node Modules
+  
+  - `/node_modules` is a dynamic directory where npm modules are installed.
+
+  - `package.json` is the configuration file for npm modules.
+
+### Bower
+ 
+ - `/bower_components` is a dynamic directory where bower components are installed.
+
+ -  `bower.json` is the configuration file for your bower components.
+
+
+### Application files
+
+The `/src` directory should contain all the files needed for the application.
+
+  - `src/app` all files related to the application.
+
+    - `src/app/modules` modules that are dependencies of the `easy sign` module.
+
+    - `src/app/views` `easy sign` views.
+
+  - `src/assets` all `easy sign` images.
+
+  - `src/sass` top level styles for `easy sign`.
+
+    - `src/sass/styles.scss` all SASS files should be imported through here.
+
 
 This boilerplate uses the latest versions of the following libraries:
 
@@ -156,66 +203,3 @@ Just as there is the `gulp dev` task for development, there is also a `gulp prod
 When running with `gulp prod`, a pre-compressed file is generated in addition to uncompressed file (.html.gz, .js.gz, css.gz). This is done to enable web servers serve compressed content without having to compress it on the fly. Pre-compression is handled by `gzip` task.
 
 
-## Getting Started
-
-First Install development dependencies, ensure you have nodejs installed and install the following tools:
-
-[Gulp](http://gulpjs.com/) command line utility:
-
-  `npm install -g gulp`
-
-[Bower](http://bower.io/) command line utility:
-  
-  `npm install -g bower`
-
-###Ensure node tools and gulp plugins are up to date:
-
-  `npm install`
-
-will install dependencies defined in **package.json** file
-
-  `bower install`
-
-will install front end dependencies defined in **bower.json** file.
-
-## Tasks
-
-- To see a list of options tasks and sub tasks
-
-  `gulp`
-
-- To build project files for development, serve browser and watch all project files:
-
-  `gulp serve`
-
-
-## Usage
-
-### Node Modules
-  
-  - `/node_modules` is a dynamic directory where npm modules are installed.
-
-  - `package.json` is the configuration file for npm modules.
-
-### Bower
- 
- - `/bower_components` is a dynamic directory where bower components are installed.
-
- -  `bower.json` is the configuration file for your bower components.
-
-
-### Application files
-
-The `/src` directory should contain all the files needed for the application.
-
-  - `src/app` all files related to the application.
-
-    - `src/app/modules` modules that are dependencies of the `easy sign` module.
-
-    - `src/app/views` `easy sign` views.
-
-  - `src/assets` all `easy sign` images.
-
-  - `src/sass` top level styles for `easy sign`.
-
-    - `src/sass/styles.scss` all SASS files should be imported through here.
